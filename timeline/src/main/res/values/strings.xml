@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="module_name">Timeline</string>
+    <string name="username_post">Username</string>
+    <string name="post_description">Post description</string>
+    <string name="post_image">Post image</string>
+    <string name="profile_picture">Profile picture</string>
+</resources>

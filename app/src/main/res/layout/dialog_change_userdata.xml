@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+
+                <EditText
+                    android:gravity="top|center_horizontal"
+                    android:id="@+id/changeuserdataName"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:hint="@string/name"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tree_green"
+                    android:imeOptions="actionDone"
+                    android:inputType="textFilter"  />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+
+                <EditText
+                    android:id="@+id/changeuserdataSurname"
+                    android:gravity="top|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:hint="@string/surname"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tree_green"
+                    android:imeOptions="actionDone"
+                    android:inputType="textFilter"  />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+
+                <EditText
+                    android:id="@+id/changeuserdataUsername"
+                    android:gravity="top|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:hint="@string/username"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:textColor="@color/tree_green"
+                    android:imeOptions="actionDone"
+                    android:inputType="textFilter"  />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+</FrameLayout>

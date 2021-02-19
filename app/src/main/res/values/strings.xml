@@ -1,0 +1,153 @@
+<resources>
+    //Log In
+
+    <string name="app_name">TreeApp</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="sign_in_with_email">Sign up with email</string>
+    <string name="login">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="continue_as_a_guest">Continue as a guest</string>
+    <string name="password_reset">Password reset</string>
+    <string name="reset_msg">Reset link was sent to your email!</string>
+    <string name="email_unconfirmed">Email is not confirmed.</string>
+    <string name="authentication_failed">Authentication failed!</string>
+    <string name="invalid_password_login">Invalid password!</string>
+    <string name="enter_username">Enter your new username</string>
+
+
+    //Registration
+
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="step1">User data</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="profilepicture">Upload profile picture \n (Optional)</string>
+    <string name="step1_next_button">Account Details</string>
+    <string name="step2_next_button">Email Confirmation</string>
+    <string name="step3_next_button">Next</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="username">Username</string>
+    <string name="please_confirm">Please confirm your email address</string>
+    <string name="email_sent">Confirmation email was sent to:</string>
+    <string name="email_check">Please check your mail and click on confirmation link to continue.</string>
+    <string name="email_not_sent">Mail not sent?</string>
+    <string name="resend_mail">Resend Mail</string>
+    <string name="AllDone">All Done!</string>
+    <string name="AccountCreated">Account created successfully!</string>
+    <string name="PlantATree">Plant a tree, don\'t be a stump</string>
+    <string name="NewsFeed">News Feed</string>
+    <string name="DatePicker">Birth Date:</string>
+    <string name="title_activity_login_test" translatable="false">LoginTest</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+
+    <string name="no_name">Please enter your name!</string>
+    <string name="no_surname">Please enter your surname!</string>
+    <string name="no_username">Please enter your username!</string>
+    <string name="no_email">Please enter an e-mail!</string>
+    <string name="username_taken">This username is already taken!</string>
+    <string name="no_password">Please enter a password!</string>
+    <string name="invalid_password">Password must be at least 6 characters long containing at least one capital letter and one number!</string>
+    <string name="invalid_email">Email is not valid, please check it!</string>
+    <string name="invalid_password_repeat">Repeated password is incorrect!</string>
+    <string name="emailverified">Email is not verified!</string>
+    <string name="email_exist">Email already exist!</string>
+
+    <string name="about_tree">Tell the story about the tree:</string>
+    <string name="plant_tree">PLANT TREE</string>
+    <string name="discard">DISCARD</string>
+    <string name="type_hear">Add story about the tree...</string>
+    <string name="put_on_map">Set location</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_photo_from_gallery">Choose from Gallery</string>
+    <string name="add_photo">Add Photo!</string>
+    <string name="later">Later</string>
+    <string name="dont_ask_again">Don\'t ask again!</string>
+    <string name="later_pressed_time">Later pressed time</string>
+    <string name="dialoge_desc">Dialogue description</string>
+    <string name="we_request_again">Request again</string>
+    <string name="give_permissions">Give permissions</string>
+    <string name="permissions_required">Permission required</string>
+    <string name="crop_image">Crop image</string>
+    <string name="title_activity_post_map_view">Map</string>
+    <string name="username_post">Username</string>
+    <string name="post_description_post">Post description</string>
+
+    <string name="title_activity_single_post_view" translatable="false">FullscreenActivity</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+    <string name="Error">There was an error!</string>
+    <string name="Error_loading_picture">There was an error during image load!</string>
+    <string name="tree_description">More about this tree</string>
+    <string name="comments">Comments</string>
+    <string name="description">Description</string>
+    <string name="points">points</string>
+
+
+    <string name="registration_default_profile_picture" translatable="false">default_profile_picture.jpeg</string>
+    <string name="leafs_on_this_post">Leafs on this post</string>
+    <string name="write_a_comment">Write a comment!</string>
+    <string name="feature_not_available">This feature isn\'t available for you! Please Register :)</string>
+    <string name="now">Now</string>
+    <string name="Anonymous">Anonymous</string>
+
+    <string name="deletePost">Delete post</string>
+    <string name="deleteComment">Delete Comment</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="leaderboard_item_number">Ranking number</string>
+    <string name="leaderboard_item_points">Points</string>
+    <string name="leaderboard_item_points_text">\u0020points</string>
+    <string name="leaderboard_location_button">Choose location</string>
+    <string name="leaderboard_apply_button">Apply location</string>
+    <string name="choose_location_button_timeline">Choose location</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_leaderboard_location_mapview">Map</string>
+    <string name="radius_in_km">Radius in km</string>
+    <string name="default_notification_channel_id" translatable="false">12</string>
+    <string name="comment_notification">has commented on your post</string>
+    <string name="leaf_notification">has added leaf to your tree</string>
+    <string name="tap_the_refresh_button_below_and_check_again">Tap the refresh button below and check again.</string>
+    <string name="refresh">Refresh</string>
+    <string name="nothing_here">Nothing here!!!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    // User search
+    <string name="user_search_hint">Enter username</string>
+    <string name="user_search_button">Search users</string>
+    <string name="profile_pic">Profile picture</string>
+    <string name="leaf_icon">Leaf icon</string>
+    <string name="tree_icon">Tree icon</string>
+    <string name="number_of_points" translatable="false">0</string>
+    <string name="number_of_posts" translatable="false">0</string>
+    <string name="search_no_username">Please enter username!</string>
+    <string name="search_not_found">No users found!</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="anonuser">user</string>
+
+
+    // User data change
+    <string name="changeprofilepic">Change profile picture</string>
+    <string name="changeuserdata">Change name, surname or username</string>
+    <string name="changepassword">Change password</string>
+    <string name="logout">Logout</string>
+
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="newpasswordrepeat">Repeat Password</string>
+    <string name="notifications">Notifications</string>
+
+    // Change post data
+    <string name="changedescription">Change description</string>
+    <string name="changelocation">Change location</string>
+</resources>

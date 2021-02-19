@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".postView.SinglePostViewActivity">
+
+
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showPopup"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:translationZ="91dp"
+        android:alpha="0.5"
+        />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/line_11"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/postImageView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/usernameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="TextView"
+                        android:textColor="@color/tree_green"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/userPoints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/roboto_thin"
+
+                        android:text="TextView"
+                        android:textColor="@color/tree_green" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/leafIconButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp"
+                        tools:srcCompat="@drawable/leaf_like_button" />
+
+                    <TextView
+                        android:id="@+id/numberOfLeafsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="@color/tree_green" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reactionsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/leftDescAddon"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:srcCompat="@drawable/horizontal_half_line" />
+
+                <TextView
+                    android:id="@+id/descriptionHeading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/tree_description"
+                    android:textAlignment="center"
+                    android:textColor="@color/tree_green"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/rightDescAddon"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:srcCompat="@drawable/horizontal_half_line" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/treeDescriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/description"
+                android:textSize="18sp" />
+
+            <fragment
+                android:id="@+id/treeLocationMapView"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:minHeight="120dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/leftComAddon"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        app:srcCompat="@drawable/horizontal_half_line" />
+
+                    <TextView
+                        android:id="@+id/commentsHeading"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/comments"
+                        android:textAlignment="center"
+                        android:textColor="@color/tree_green"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/rightComAddon"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        app:srcCompat="@drawable/horizontal_half_line" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/commentRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/newCommentTextBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/roboto_light"
+                        android:hint="@string/write_a_comment"
+                        android:padding="8dp" />
+
+                    <Button
+                        android:id="@+id/postNewComment"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+
+                        android:background="@drawable/send_comment" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

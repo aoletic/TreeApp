@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="529dp"
+        android:layout_height="480dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/bntLogin3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.25"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/bntLogin3"
+        android:layout_width="207dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/tree_green"
+        android:fontFamily="robo"
+        android:onClick="login"
+        android:text="@string/login"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59000003" />
+
+    <Button
+        android:id="@+id/btnMailLogin3"
+        android:layout_width="266dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/tree_green"
+        android:fontFamily="robo"
+        android:onClick="OpenRegistration"
+        android:text="@string/sign_up"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPassword3"
+        android:layout_width="288dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/tree_green"
+        android:ems="10"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/tree_green"
+        app:layout_constraintBottom_toTopOf="@+id/btnPasswordReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEmail3"
+        android:layout_width="289dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/tree_green"
+        android:ems="10"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/tree_green"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnGoogleLogin3"
+        android:layout_width="176dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:onClick="signIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bntLogin3"
+        app:srcCompat="@drawable/group_1" />
+
+    <TextView
+        android:id="@+id/lblRegistration3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:capitalize="characters"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/registration"
+        android:textColor="@color/tree_green"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMailLogin3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblRegistration3"
+        app:layout_constraintEnd_toStartOf="@+id/lblRegistration"
+        app:layout_constraintStart_toEndOf="@+id/lblRegistration3"
+        app:srcCompat="@drawable/line_11" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblRegistration3"
+        app:layout_constraintEnd_toStartOf="@+id/lblRegistration3"
+        app:layout_constraintStart_toEndOf="@+id/lblRegistration"
+        app:layout_constraintTop_toTopOf="@+id/lblRegistration"
+        app:srcCompat="@drawable/line_9" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.40"
+        app:srcCompat="@drawable/logo_new_size" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="216dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/continue_as_a_guest"
+        android:onClick="guest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPasswordReset"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/roboto_light"
+        android:onClick="OpenReset"
+        android:paddingLeft="2dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/password_reset"
+        android:textColor="@color/tree_green"
+        android:textSize="10sp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/bntLogin3"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword3"
+        app:rippleColor="#FFFFFF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

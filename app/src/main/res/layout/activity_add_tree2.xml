@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addTree.AddTreeActivity">
+
+
+    <ScrollView
+        android:id="@+id/add_tree_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="223dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/treeImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:visibility="visible"
+                app:srcCompat="@drawable/image_load_icon" />
+
+            <ImageView
+                android:id="@+id/separator_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/treeImageView"
+                android:scaleX="1.5"
+                app:srcCompat="@drawable/line_plus_h" />
+
+            <TextView
+                android:id="@+id/story_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator_line"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/about_tree"
+                android:textColor="@color/tree_green"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/treeDescriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                android:layout_below="@id/story_text"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="5dp"
+                android:autofillHints=""
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="start|top"
+                android:hint="@string/type_hear"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/mapText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/treeDescriptionText"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/put_on_map"
+                android:textColor="@color/tree_green"
+                android:textSize="18sp" />
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/mapText"
+                android:layout_marginBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/transparent_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/mapText"
+                android:src="@color/transparent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/map"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/discardTreeButton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:onClick="discard"
+                    android:text="@string/discard"
+                    android:textColor="@color/tree_green"
+                    app:strokeColor="@color/tree_green"
+                    app:strokeWidth="2pt" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/plantTreeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:insetLeft="6dp"
+                    android:insetRight="6dp"
+                    android:text="@string/plant_tree" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/postpopupdescription"
+        android:title="@string/changedescription"/>
+    <item
+        android:id="@+id/postpopuplocation"
+        android:title="@string/changelocation"/>
+    <item
+        android:id="@+id/postpopupdelete"
+        android:title="@string/deletePost" />
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/topmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/baby_green"
+        android:background="@color/baby_green">
+
+        <LinearLayout
+            android:id="@+id/topmenumainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/chooseLocationTimeline"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/baby_green"
+        android:onClick="chooseLocationButtonClick"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/filter_icon_png" />
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topmenu"
+        android:layout_above="@id/bottom_navigation"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        android:translationZ="91dp"
+
+        />
+
+</RelativeLayout>

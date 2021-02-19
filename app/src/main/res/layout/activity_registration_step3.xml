@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentBottom="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical"
+        tools:context=".registration.RegistrationStep3">
+
+        <TextView
+            android:id="@+id/btnLogInStep3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto"
+            android:onClick="OpenLogIn"
+            android:text="@string/login"
+            android:textColor="@color/tree_green"
+            app:layout_constraintBottom_toBottomOf="@+id/lblLogInStep3"
+            app:layout_constraintStart_toEndOf="@+id/lblLogInStep3"
+            app:layout_constraintTop_toTopOf="@+id/lblLogInStep3" />
+
+        <TextView
+            android:id="@+id/lblLogInStep3"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:forceDarkAllowed="false"
+            android:text="@string/already_have_account"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btnStep3ResendMail"
+            app:layout_constraintTop_toBottomOf="@+id/btnStep3ResendMail" />
+
+        <Button
+            android:id="@+id/btnStep3ResendMail"
+            android:layout_width="318dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/tree_green"
+            android:fontFamily="@font/roboto_medium"
+            android:onClick="OpenRegistrationStep4"
+            android:text="@string/step3_next_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep3NotSent" />
+
+        <ImageView
+            android:id="@+id/imgViewStep3Top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:forceDarkAllowed="false"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backsmall" />
+
+        <TextView
+            android:id="@+id/lblStep3Registracija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/registration"
+            android:textColor="@color/tree_green"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgViewStep3LogoSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logosmall" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgViewStep3Top">
+
+            <ImageView
+                android:id="@+id/imgViewStep3Step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:onClick="OpenRegistrationStep1"
+                app:srcCompat="@drawable/step1white" />
+
+            <ImageView
+                android:id="@+id/imgViewStep3Step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:onClick="OpenRegistrationStep2"
+                app:srcCompat="@drawable/step2white" />
+
+            <ImageView
+                android:id="@+id/imgViewStep3Step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/step3green" />
+
+            <ImageView
+                android:id="@+id/imgViewStep3Step4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/step4white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblStep2AccountDetails2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/step2_next_button"
+            android:textColor="@color/tree_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarStep3" />
+
+        <ProgressBar
+            android:id="@+id/progressBarStep3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="43dp"
+            android:backgroundTint="@color/tree_green"
+            android:progress="72"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+        <TextView
+            android:id="@+id/lblStep3PleaseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="43dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/email_check"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep3Email" />
+
+        <TextView
+            android:id="@+id/lblStep3Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="43dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/tree_green"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep3SentTo" />
+
+        <TextView
+            android:id="@+id/lblStep3ConfirmMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="43dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/please_confirm"
+            android:textAlignment="center"
+            android:textColor="@color/tree_green"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/lblStep3SentTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/email_sent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep3ConfirmMail" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep2AccountDetails2"
+            app:srcCompat="@drawable/mail_icon" />
+
+        <TextView
+            android:id="@+id/lblStep3NotSent"
+            android:layout_width="330dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/email_not_sent"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep3PleaseCheck" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="411dp"
+            app:constraint_referenced_ids="imgViewStep3Step1,imgViewStep3Step2,imgViewStep3Step3,imgViewStep3Step4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

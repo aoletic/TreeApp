@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TreeApp</string>
+    <string name="password">Lozinka</string>
+    <string name="email">Email</string>
+    <string name="registration">REGISTRACIJA</string>
+    <string name="sign_in_with_email">Email registracija</string>
+    <string name="login">Prijava</string>
+    <string name="sign_up">Registriraj se</string>
+
+
+
+    <string name="continue_as_a_guest">Nastavi kao gost</string>
+
+    <string name="name">Ime</string>
+    <string name="surname">Prezime</string>
+    <string name="step1">Podaci o korisniku</string>
+    <string name="already_have_account">Već imaš korisnički račun?</string>
+    <string name="profilepicture">Uploadaj profilnu sliku \n (Opcionalno)</string>
+    <string name="step1_next_button">Podaci o računu</string>
+    <string name="step2_next_button">Potvrda emaila</string>
+    <string name="repeat_password">Ponovite lozinku</string>
+    <string name="username">Korisničko ime</string>
+    <string name="email_exist">Ovaj email već postoji!</string>
+
+    <string name="please_confirm">Molimo potvrdite email adresu</string>
+    <string name="email_sent">Poslan vam je email potvrde na adresu:</string>
+    <string name="email_check">Provjerite svoj mail i kliknite na link potvrde za nastavak.</string>
+    <string name="email_not_sent">Email nije stigao?</string>
+    <string name="resend_mail">Ponovno pošalji mail</string>
+    <string name="AllDone">Gotovo!</string>
+    <string name="AccountCreated">Račun je uspješno kreiran!</string>
+    <string name="PlantATree">Posadi drvo, ne budi panj</string>
+    <string name="NewsFeed">Naslovnica</string>
+    <string name="DatePicker">Datum rođenja:</string>
+
+    <string name="no_name">Molimo unesite vaše ime!</string>
+    <string name="no_surname">Molimo unesite vaše prezime!</string>
+    <string name="no_username">Molimo unesite korisničko ime!</string>
+    <string name="no_email">Molimo unesite e-mail!</string>
+    <string name="username_taken">Korisničko ime je zauzeto!</string>
+    <string name="no_password">Molimo unesite lozinku!</string>
+    <string name="invalid_password">Lozinka mora biti duga barem 6 znakova, sadržavati barem jedno veliko slovo i jedan broj!</string>
+    <string name="invalid_email">Uneseni e-mail nije ispravan, molimo provjerite ga!</string>
+    <string name="invalid_password_repeat">Ponovljena lozinka nije ispravna!</string>
+    <string name="password_reset">Reset lozinke</string>
+    <string name="reset_msg">Link za reset lozinke je poslan na Vaš email!</string>
+    <string name="step3_next_button">Dalje</string>
+    <string name="email_unconfirmed">Email nije potvrđen.</string>
+    <string name="authentication_failed">Autentifikiacija neuspješna!</string>
+    <string name="invalid_password_login">Neispravna lozinka!</string>
+    <string name="about_tree">Ispričaj priču o stablu:</string>
+    <string name="plant_tree">POSADI STABLO</string>
+    <string name="discard">ODUSTANI</string>
+
+    <string name="emailverified">Email nije verificiran!</string>
+    <string name="enter_username">Unesite vaše novo korisničko ime</string>
+
+    <string name="type_hear">Dodajte priču o stablu...</string>
+    <string name="put_on_map">Postavite lokaciju</string>
+    <string name="take_photo">Fotografiraj</string>
+    <string name="cancel">Odustani</string>
+    <string name="choose_photo_from_gallery">Odaberi iz galerije</string>
+    <string name="add_photo">Dodaj fotografiju!</string>
+    <string name="later">Kasnije</string>
+    <string name="dont_ask_again">Ne pitaj više!</string>
+    <string name="later_pressed_time">Kasnije</string>
+    <string name="dialoge_desc">Opis</string>
+    <string name="we_request_again">Ponovni zahtjev</string>
+    <string name="give_permissions">Daj dopuštenje</string>
+    <string name="permissions_required">Potrebno dopuštenje</string>
+    <string name="crop_image">Uredi fotografiju</string>
+    <string name="username_post">Korisničko ime</string>
+    <string name="post_description_post">Opis objave</string>
+    <string name="Error_loading_picture">Došlo je do pogreške prilikom dohvata slike!</string>
+    <string name="Error">Došlo je do pogreške!</string>
+    <string name="tree_description">Više o ovom stablu</string>
+    <string name="comments">Komentari</string>
+    <string name="description">Opis</string>
+    <string name="points">bodova</string>
+    <string name="user_search_hint">Unesite korisničko ime</string>
+    <string name="user_search_button">Pretraži korisnike</string>
+    <string name="profile_pic">Slika profila</string>
+    <string name="leaf_icon">Ikona lista</string>
+    <string name="tree_icon">Ikona drveta</string>
+    <string name="search_no_username">Unesite korisničko ime!</string>
+    <string name="search_not_found">Nije pronađen niti jedan korisnik!</string>
+
+
+    <string name="leafs_on_this_post">Listovi na ovoj objavi</string>
+    <string name="write_a_comment">Napiši komentar!</string>
+    <string name="feature_not_available">Ova mogućnost nije dostupna za vas! Molimo registrirajte se :)</string>
+    <string name="now">Upravo</string>
+    <string name="Anonymous">Anoniman</string>
+
+    <string name="deletePost">Obriši objavu</string>
+    <string name="deleteComment">Obriši komentar</string>
+    <string name="title_activity_post_map_view">Mapa</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="leaderboard_item_number">Mjesto</string>
+    <string name="leaderboard_item_points">Bodovi</string>
+    <string name="leaderboard_item_points_text">\u0020bodova</string>
+    <string name="leaderboard_location_button">Odaberi lokaciju</string>
+    <string name="leaderboard_apply_button">Primjeni lokaciju</string>
+    <string name="choose_location_button_timeline">Odaberi lokaciju</string>
+    <string name="title_activity_leaderboard_location_mapview">Mapa</string>
+    <string name="radius_in_km">Radijus u km</string>
+    <string name="comment_notification">je postavio/la komentar na tvojoj objavi</string>
+    <string name="leaf_notification">je dodao/la listić na tvoje stablo</string>
+    <string name="tap_the_refresh_button_below_and_check_again">Klikni na osvježi i provjeri ponovo.</string>
+    <string name="refresh">Osvježi</string>
+    <string name="nothing_here">Nema obavijesti!!!</string>
+
+    <string name="changeprofilepic">Promjena profilne slike</string>
+    <string name="changeuserdata">Promjena ime, prezime i korisničko ime</string>
+    <string name="changepassword">Promjena lozinke</string>
+    <string name="logout">Odjava</string>
+
+    <string name="oldpassword">Trenutna lozinka</string>
+    <string name="newpassword">Nova lozinka</string>
+    <string name="newpasswordrepeat">Ponovite lozinku</string>
+
+    <string name="notifications">Obavijesti</string>
+    <string name="changedescription">Ažuriraj opis</string>
+    <string name="changelocation">Ažuriraj lokaciju</string>
+    <string name="anonuser">korisnik</string>
+    <string name="anonymous">Anonimni</string>
+
+</resources>

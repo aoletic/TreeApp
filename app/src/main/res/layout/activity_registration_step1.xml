@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:foregroundTint="@color/tree_green"
+        tools:context=".registration.RegistrationStep1"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/imgViewStep1Top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:forceDarkAllowed="false"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backsmall" />
+
+        <ImageView
+            android:id="@+id/imgViewStep1LogoSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/imgViewStep1Top"
+            app:layout_constraintTop_toTopOf="@+id/imgViewStep1Top"
+            app:srcCompat="@drawable/logosmall" />
+
+        <TextView
+            android:id="@+id/lblStep1Registracija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/registration"
+            android:textColor="@color/tree_green"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@+id/imgViewStep1Top"
+            app:layout_constraintTop_toTopOf="@+id/imgViewStep1Top" />
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgViewStep1Top">
+
+            <ImageView
+                android:id="@+id/imgViewStep1Step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/step1green" />
+
+            <ImageView
+                android:id="@+id/imgViewStep1Step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/step2white" />
+
+            <ImageView
+                android:id="@+id/imgViewStep1Step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/step3white" />
+
+            <ImageView
+                android:id="@+id/imgViewStep1Step4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/step4white" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="87dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep1UserData"
+            app:srcCompat="@drawable/profileplaceholder" />
+
+        <TextView
+            android:id="@+id/lblStep1UserData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/step1"
+            android:textColor="@color/tree_green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarStep1" />
+
+        <TextView
+            android:id="@+id/lblLogInStep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto_light"
+            android:forceDarkAllowed="false"
+            android:text="@string/already_have_account"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnStep1Next"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/txtBoxStep1Surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="43dp"
+            android:backgroundTint="@color/tree_green"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/surname"
+            android:inputType="textPersonName"
+            android:textColor="@color/tree_green"
+            android:textColorHighlight="@color/tree_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBoxStep1Name" />
+
+        <EditText
+
+
+            android:id="@+id/txtBoxStep1Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="43dp"
+            android:backgroundTint="@color/tree_green"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:textColor="@color/tree_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfile" />
+
+        <ProgressBar
+            android:id="@+id/progressBarStep1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="43dp"
+            android:backgroundTint="@color/tree_green"
+            android:progress="20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+        <Button
+            android:id="@+id/btnStep1Next"
+            android:layout_width="318dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/tree_green"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="OpenRegistrationStep2"
+
+            android:text="@string/step1_next_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datePickerStep1" />
+
+        <TextView
+            android:id="@+id/btnLogInStep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="OpenLogIn"
+            android:text="@string/login"
+            android:textColor="@color/tree_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblLogInStep1" />
+
+        <TextView
+            android:id="@+id/lblStep1Profile"
+            android:layout_width="134dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_light"
+            android:forceDarkAllowed="false"
+            android:text="@string/profilepicture"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/imgProfile"
+            app:layout_constraintStart_toEndOf="@+id/imgProfile"
+            app:layout_constraintTop_toTopOf="@+id/imgProfile" />
+
+        <DatePicker
+            android:id="@+id/datePickerStep1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginEnd="43dp"
+            android:backgroundTint="@color/tree_green"
+            android:calendarTextColor="@color/tree_green"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:headerBackground="@color/tree_green"
+            android:yearListSelectorColor="@color/tree_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBoxStep1Surname" />
+
+        <TextView
+            android:id="@+id/lblStep1DatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/DatePicker"
+            app:layout_constraintStart_toStartOf="@+id/txtBoxStep1Surname"
+            app:layout_constraintTop_toBottomOf="@+id/txtBoxStep1Surname" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

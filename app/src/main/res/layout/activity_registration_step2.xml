@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".registration.RegistrationStep2">
+
+        <TextView
+            android:id="@+id/btnLogInStep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="OpenLogIn"
+            android:text="@string/login"
+            android:textColor="@color/tree_green"
+            app:layout_constraintStart_toEndOf="@+id/lblloginStep2"
+            app:layout_constraintTop_toTopOf="@+id/lblloginStep2" />
+
+        <TextView
+            android:id="@+id/lblloginStep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_light"
+            android:forceDarkAllowed="false"
+            android:text="@string/already_have_account"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnStep2Next" />
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgViewStep1Top2">
+
+            <ImageView
+                android:id="@+id/imgViewStep2Step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:onClick="OpenRegistrationStep1"
+                app:srcCompat="@drawable/step1white" />
+
+            <ImageView
+                android:id="@+id/imgViewStep2Step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/step2greenn" />
+
+            <ImageView
+                android:id="@+id/imgViewStep2Step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/step3white" />
+
+            <ImageView
+                android:id="@+id/imgViewStep2Step4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/step4white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblStep2AccountDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/step1_next_button"
+            android:textColor="@color/tree_green"
+            app:layout_constraintStart_toStartOf="@+id/txtBoxStep2Email"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarStep2" />
+
+    <ProgressBar
+        android:id="@+id/progressBarStep2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="43dp"
+        android:backgroundTint="@color/tree_green"
+        android:progress="47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+        <Button
+            android:id="@+id/btnStep2Next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="43dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/tree_green"
+            android:fontFamily="@font/roboto_medium"
+            android:onClick="OpenRegistrationStep3"
+            android:text="@string/step2_next_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBoxStep2Password" />
+
+        <EditText
+            android:id="@+id/txtBoxStep2Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="43dp"
+            android:backgroundTint="@color/tree_green"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep2AccountDetails" />
+
+        <EditText
+            android:id="@+id/txtBoxStep2Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="43dp"
+            android:backgroundTint="@color/tree_green"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBoxStep2Email" />
+
+        <EditText
+            android:id="@+id/txtBoxStep2Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="43dp"
+            android:backgroundTint="@color/tree_green"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBoxStep2PasswordRepeat" />
+
+        <EditText
+            android:id="@+id/txtBoxStep2PasswordRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="43dp"
+            android:backgroundTint="@color/tree_green"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/repeat_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBoxStep2Username" />
+
+    <ImageView
+        android:id="@+id/imgViewStep1Top2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:forceDarkAllowed="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backsmall"
+        tools:layout_editor_absoluteX="-6dp" />
+
+        <TextView
+            android:id="@+id/lblStep1Registracija2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/registration"
+            android:textColor="@color/tree_green"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgViewStep1LogoSmall4"
+            app:layout_constraintStart_toEndOf="@+id/imgViewStep1LogoSmall4"
+            app:layout_constraintTop_toTopOf="@+id/imgViewStep1LogoSmall4" />
+
+        <ImageView
+            android:id="@+id/imgViewStep1LogoSmall4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgViewStep1Top2"
+            app:srcCompat="@drawable/logosmall" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

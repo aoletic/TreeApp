@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        tools:context=".registration.RegistrationStep4">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/stablogif" />
+
+        <Button
+            android:id="@+id/btnStep3ResendMail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="43dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/tree_green"
+            android:fontFamily="@font/roboto"
+            android:onClick="OpenLogIn"
+            android:text="@string/login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep4AccountCreated" />
+        <ImageView
+            android:id="@+id/imgViewStep4LogoSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/logosmall" />
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgViewStep4Top">
+
+            <ImageView
+                android:id="@+id/imgViewStep4Step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/step1white" />
+
+            <ImageView
+                android:id="@+id/imgViewStep4Step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/step2white" />
+
+            <ImageView
+                android:id="@+id/imgViewStep4Step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/step3white" />
+
+            <ImageView
+                android:id="@+id/imgViewStep4Step4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/step4green" />
+        </LinearLayout>
+    <ImageView
+        android:id="@+id/imgViewStep4Top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:forceDarkAllowed="false"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backsmall"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <TextView
+        android:id="@+id/lblStep3Registracija2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/registration"
+        android:textColor="@color/tree_green"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblStep4AllDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/AllDone"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/tree_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarStep4" />
+
+        <ProgressBar
+            android:id="@+id/progressBarStep4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="43dp"
+            android:backgroundTint="@color/tree_green"
+            android:progress="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+        <TextView
+            android:id="@+id/lblStep4AccountCreated"
+            android:layout_width="233dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="48dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/AccountCreated"
+            android:textAlignment="center"
+            android:textColor="@color/tree_green"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/lblStep4PlantATree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/PlantATree"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/btnStep3ResendMail2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep4AccountCreated" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="175dp"
+            android:layout_height="276dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStep4AllDone"
+            app:srcCompat="@drawable/stablogif" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

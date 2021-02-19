@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/button_apply_leaderboard"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+
+            android:text="@string/leaderboard_apply_button"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cardview_light_background"
+            android:background="@drawable/rounded_corners"
+            tools:ignore="MissingConstraints"
+            ></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/LinearLayout3"
+        android:layout_marginTop="67dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/radius_text"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cardview_light_background"
+            android:background="@drawable/rounded_corners"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="67dp"
+            android:hint="@string/radius_in_km"></EditText>
+    </LinearLayout>
+
+</fragment>
